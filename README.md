@@ -14,11 +14,10 @@ Run `pip install -r requirements.txt` to install the required modules.
 
 Run the script and play something via fooyin, it should display your current track and artist / album.
 
-You may also run it as a service by moving the `fooyinrpc.service` file provided to `~/.config/systemd/user`, open it, edit the `/path/to/fooyinrpc.py` to the one where the script is saved, save the file and then run the following commands:
+You may also run it as a service by moving the `fooyinrpc.service` file provided to `~/.config/systemd/user`, edit the service file and replace `/path/to/fooyinrpc.py` to the one where the script is saved, save the file and then run the following commands:
 ```
 systemctl --user daemon-reload
-systemctl --user enable fooyinrpc.service
-systemctl --user start fooyinrpc.service
+systemctl --user enable --now fooyinrpc.service
 ````
 By running `systemctl --user status fooyinrpc.service` you can check that it's been properly initialized.
 This way you can forget about it and always have Rich Presence for fooyin running in the background.
