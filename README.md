@@ -1,6 +1,6 @@
 # fooyin Rich Presence
 
-This Python script allows you to display the current song, artist and album of the track you're listening on fooyin to Discord.
+This Python script allows you to display the current song, artist and album of the track you're listening on [fooyin](https://github.com/fooyin/fooyin) to Discord.
 <p align="center"> <img width="404" height="162" alt="Screenshot_20260101_200433" src="https://github.com/user-attachments/assets/08f18d4a-1e52-4bf1-a120-79c6874b4cdb" /> </p>
 
 # Requirements
