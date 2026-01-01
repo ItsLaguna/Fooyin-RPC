@@ -5,6 +5,7 @@ This Python script allows you to display the current song, artist, and album of 
 
 # Requirements
 
+- [fooyin](https://github.com/fooyin/fooyin)
 - `pypresence`
 - `pydbus`
 
