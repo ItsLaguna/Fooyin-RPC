@@ -23,4 +23,4 @@ systemctl --user start fooyin-pc.service
 By running `systemctl --user status fooyinrpc.service` you can check that it's been properly initialized.
 This way you can forget about it and always have Rich Presence for fooyin running in the background.
 
-### Last but not least, this was vibecoded, I'm too dumb for stuff like this 🫡
+### Last but not least, this was "vibecoded", I'm too dumb for stuff like this 🫡
