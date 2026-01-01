@@ -18,7 +18,7 @@ You may also run it as a service by moving the `fooyinrpc.service` file provided
 ```
 systemctl --user daemon-reload
 systemctl --user enable fooyinrpc.service
-systemctl --user start fooyin-pc.service
+systemctl --user start fooyinrpc.service
 ````
 By running `systemctl --user status fooyinrpc.service` you can check that it's been properly initialized.
 This way you can forget about it and always have Rich Presence for fooyin running in the background.
