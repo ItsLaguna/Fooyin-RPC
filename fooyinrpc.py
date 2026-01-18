@@ -1,6 +1,8 @@
 import time
 from pypresence import Presence
 from pydbus import SessionBus
+from pypresence.types import ActivityType
+from pypresence.types import StatusDisplayType
 
 # CONFIG
 
