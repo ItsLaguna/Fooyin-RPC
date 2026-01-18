@@ -77,7 +77,7 @@ Install Caddy and create a file called Caddyfile (`sudo nano /etc/caddy/Caddyfil
 ```
 Then save (Ctrl + O, then Enter) and exit (Ctrl + X). 
 
-Once this is done restart Caddy (`sudo systemctl restart caddy`) and proceed to test it by accessing `https://yourdomain/_custom_Artwork` and verify that it's working.
+Once this is done restart Caddy (`sudo systemctl restart caddy`) and the script just to make sure, then proceed to test it by accessing `https://yourdomain/_custom_Artwork` and verify that it's working.
 
 If everything has gone correctly, you should be able to see the album art that's embedded on your file, sadly there's a slightly delay when changing songs but couldn't do much about it.
 
