@@ -40,7 +40,7 @@ def build_presence(metadata, start_time=None, end_time=None):
         payload["end"] = int(end_time)
 
     payload["large_image"] = LARGE_IMAGE
-    payload["large_text"] = LARGE_TEXT
+    payload["large_text"] = album 
 
     return payload
 
@@ -141,7 +141,7 @@ def run_presence():
 
             payload = build_presence(metadata, rpc_start_time, end_time)
 
-            # Update Discord (we update on every loop to stay smooth during seeks; RPC rate is low)
+            # Update Discord 
             try:
                 rpc.update(**{k: v for k, v in payload.items() if v is not None}, activity_type=ActivityType.LISTENING, name="fooyin")
             except Exception:
