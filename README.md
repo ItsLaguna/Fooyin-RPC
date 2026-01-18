@@ -25,10 +25,10 @@ This way you can forget about it and always have Rich Presence for fooyin runnin
 
 ‎ 
 
-# Fooyin Rich Presence (Album Art Ver.)
+# fooyin Rich Presence (Album Art Ver.)
 <p align="center"> <img width="402" height="165" alt="image" src="https://github.com/user-attachments/assets/0766ff90-e8c9-433b-bd28-94db3a8c05b0" /> </p>
 
-There's another version of the script that'll be offered under Releases, which allows for the embedded album art of the track (if there's any) to be displayed in the Rich Presence (if someone ever cares and wants to add the option to use a cover already present in the folder where the audio file is, feel free to make Pull Request).
+This version of the script allows for the embedded album art of the track (if there's any) to be displayed in the Rich Presence (if someone ever cares and wants to add the option to use a cover already present in the folder where the audio file is, feel free to make Pull Request 😁).
 
 # Requirements (for this version)
 - All of the other requirements
