@@ -28,7 +28,7 @@ def build_presence(metadata, start_time=None, end_time=None):
     album = safe_get(metadata, 'xesam:album', '')
 
     details = title or "Unknown track"
-    state = (artist + " — " + album) if album else artist
+    state = (artist)
 
     payload = {"details": details, "state": state or None}
 
@@ -141,7 +141,7 @@ def run_presence():
 
             # Update Discord (we update on every loop to stay smooth during seeks; RPC rate is low)
             try:
-                rpc.update(**{k: v for k, v in payload.items() if v is not None})
+                rpc.update(**{k: v for k, v in payload.items() if v is not None}, activity_type=ActivityType.LISTENING, name="fooyin")
             except Exception:
                 # try reconnecting to RPC once
                 try:
@@ -151,7 +151,7 @@ def run_presence():
                 try:
                     rpc = Presence(CLIENT_ID)
                     rpc.connect()
-                    rpc.update(**{k: v for k, v in payload.items() if v is not None})
+                    rpc.update(**{k: v for k, v in payload.items() if v is not None}, activity_type=ActivityType.LISTENING, name="fooyin")
                 except Exception:
                     pass
 
